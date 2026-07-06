@@ -2,6 +2,10 @@
 #include "search.h"
 #include "constants.h"
 
+struct HashContainer {
+	
+}
+
 /**
  * char* keyToHash(char* key)
  * 
@@ -28,7 +32,7 @@ char* chunkRetriever(char* key)
     char* hash = keyToHash(key); //The hash of the key
     if(searchInFile(HASH_FILE, hash))
     {
-
+		
     }
     return ""; //fill in statement
 }
